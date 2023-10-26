@@ -1,2 +1,2 @@
-# GFGProblems
-Explore my repository filled with solutions to GFG problems, a testament to my commitment to mastering algorithms and data structures. This collection reflects my journey of continuous improvement as a problem solver.
+# Geeks for Geeks (GFG) Problem Solutions by [Hariom Kalra]
+🚀 Explore my repository filled with solutions to GFG problems, a testament to my commitment to mastering algorithms and data structures. While I've independently crafted many solutions, some have been refined with insights from online resources. This collection reflects my journey of continuous improvement as a problem solver. Dive in and witness the evolution of a dedicated coder. 💡 #GFGSolutions 💪
