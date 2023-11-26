@@ -1,21 +1,20 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <incLibs.h>
 
 /**
- * @brief Approach-1: T: O(N), S: O(N)
+ * @brief 	Approach-1: T: O(N), S: O(N)
  *
- * @def Simple Brute Force.
+ * @def 	Simple Brute Force.
  *
- * @details Just decrease value of N by 5 untill its +ve & keep adding it to Result array. Once the value is -ve, just repeat same 
- * steps but this time by adding 5 to the value untill its not greater than N.
+ * @details 	Just decrease value of N by 5 untill its +ve & keep adding it to Result array. Once the value is -ve, just repeat same steps but this time by adding 5 to
+ * 		the value untill its not greater than N.
  */
 class Solution
 {
 public:
 	vector<int> pattern(int N)
 	{
-		vector<int> result;
-		int temp = N;
+		vector<int32_t> result;
+		int32_t temp = N;
 
 		// Subtracting 5 to the value untill its not -ve.
 		while (temp > 0)
@@ -36,25 +35,24 @@ public:
 };
 
 /**
- * @brief Approach-2: T: O(N), S: O(N)
+ * @brief 	Approach-2: T: O(N), S: O(N)
  *
- * @def Optimized using Reccursion. 
+ * @def 	Optimized using Reccursion.
  *
- * @details Just take a flag (to identify if we have crossed 0 once or not), take a varible (to store original value), take a vector 
- * pointer (to store soln), and call the custom function recursively with the possible 4 conditions: 
- * 	--> If we haven't crossed/reached 0 once, keep reducing N by 5 & add it into result array.
- * 	--> Once we reach 0, add the value of N & start increasing N by 5.
- * 	--> Perform the addition untill we regain N as the original value.
- * 	--> Once N is equal to original value, return the result array.
- * Do take into consideration the condition if initially, N is 0 or -ve, just return value of N in a result. No need to do any 
- * further operation.
+ * @details 	Just take a flag (to identify if we have crossed 0 once or not), take a varible (to store original value), take a vector pointer (to store soln), and call
+ * 		the custom function recursively with the possible 4 conditions:
+ * 			--> If we haven't crossed/reached 0 once, keep reducing N by 5 & add it into result array.
+ * 			--> Once we reach 0, add the value of N & start increasing N by 5.
+ * 			--> Perform the addition untill we regain N as the original value.
+ * 			--> Once N is equal to original value, return the result array.
+ * 		Do take into consideration the condition if initially, N is 0 or -ve, just return value of N in a result. No need to do any further operation.
  */
 class Solution
 {
 private:
-	void findPattern(int N, bool *flag, vector<int> *result, int originalVal)
+	void findPattern(int32_t N, bool *flag, vector<int32_t> *result, int32_t originalVal)
 	{
-		// If we have't crossed/reached 0 yet, we reduce 5 from N. 
+		// If we have't crossed/reached 0 yet, we reduce 5 from N.
 		if ((N > 0) && !*flag)
 		{
 			result->push_back(N);
@@ -86,7 +84,7 @@ public:
 	vector<int> pattern(int N)
 	{
 		bool flag = false;
-		vector<int> result;
+		vector<int32_t> result;
 
 		// Taking into consideration if N is 0 or -ve.
 		if (N <= 0)
