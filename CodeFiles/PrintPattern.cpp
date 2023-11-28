@@ -1,4 +1,4 @@
-#include <incLibs.h>
+#include "../HeaderFiles/incLibs.h"
 
 /**
  * @brief 	Approach-1: T: O(N), S: O(N)
@@ -35,7 +35,7 @@ public:
 };
 
 /**
- * @brief 	Approach-2: T: O(N), S: O(N)
+ * @brief 	Approach-2: T: O(N), S: O(2N)
  *
  * @def 	Optimized using Reccursion.
  *
