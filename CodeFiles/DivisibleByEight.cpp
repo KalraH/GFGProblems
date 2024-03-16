@@ -5,7 +5,8 @@
  *
  * @def		Using mathematical reasoning. For any number to-be divisible by 8, it's last 3 digits should be divisible by 3.
  *
- * @details	If the string size is less than 3, then just convert it into int using stoi() STL & find it's remainder with 8. If the number is greater than 8, 
+ * @details	If the string size is less than 3, then just convert it into int using stoi() STL & find it's remainder with 8. 
+ * 		If the number is greater than 8, we check for the last 3 digits of the number to-be divisible by 8.
  */
 class Solution
 {
